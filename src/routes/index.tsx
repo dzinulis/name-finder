@@ -176,7 +176,7 @@ function nameFilter() {
           style={{ margin: '0 16px' }}
         />
         {status === "success" ? (
-          NameList(data.filter(filterNames).sort(sortNames))
+          NameList(data.filter(filterNames).sort(sortNames), true)
         ) : (
           <h2> Loading... </h2>
         )

@@ -12,11 +12,11 @@ function wordCount(data: NameInfo[]): string {
   }
 }
 
-export const NameList = (data: NameInfo[]) => {
+export const NameList = (data: NameInfo[], showCount: boolean) => {
 
   return (
     <div style={{ width: "200" }}>
-      <h3>{wordCount(data)}:</h3>
+      {showCount ? (<h3>{wordCount(data)}:</h3>) : (<div></div>)}
       <List
         bordered
         dataSource={data}
