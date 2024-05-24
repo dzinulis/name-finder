@@ -26,7 +26,6 @@ npm run dev
 Missing features to be added in the near future:
 - multiple language support
 - extended name day calendar
-- today's names
 
 Missing features to be added in the far future:
 - other countries' name day calendars
