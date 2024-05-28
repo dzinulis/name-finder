@@ -26,14 +26,17 @@ function MonthCheckbox({ monthValue, setMonthValue }: MonthProps) {
         setMonthValue(checkedValues.map(x => parseInt(x.toString())));
     };
     return (
-        <div>
-            <h3>Mēnesis:</h3>
-            <Checkbox.Group
-                options={monthOptions}
-                value={monthValue}
-                onChange={onMonthChange}
-            />
-        </div>
+        <>
+            <h3 style={{ maxWidth: 450, display: 'flex', justifyContent: 'center' }}>Vārda dienas mēnesis:</h3>
+            <div style={{ display: 'flex', justifyContent: 'center' }}>
+
+                <Checkbox.Group
+                    options={monthOptions}
+                    value={monthValue}
+                    onChange={onMonthChange}
+                />
+            </div>
+        </>
     )
 }
 

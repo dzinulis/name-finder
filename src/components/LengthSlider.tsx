@@ -23,32 +23,39 @@ function LengthSlider({ minLength, maxLength, setMinLength, setMaxLength }: Leng
     }
 
     return (
-        <div>
-            <h3>Vārda garums:</h3>
-            <b>No:</b>
-            <InputNumber
-                min={3}
-                max={maxLength}
-                style={{ margin: '0 16px' }}
-                value={minLength}
-                onChange={onMinLengthChange}
-            />
-            <b>Līdz:</b>
-            <InputNumber
-                min={minLength}
-                max={11}
-                style={{ margin: '0 16px' }}
-                value={maxLength}
-                onChange={onMaxLengthChange}
-            />
-            <Slider
-                range
-                min={3}
-                max={11}
-                value={[minLength, maxLength]}
-                onChange={onSliderChange}
-            />
-        </div>
+        <>
+            <h3 style={{ display: 'flex', justifyContent: 'center' }}>Vārda garums:</h3>
+            <div style={{ display: 'flex', justifyContent: 'center' }}>
+
+                <b>No:</b>
+                <InputNumber
+                    min={3}
+                    max={maxLength}
+                    style={{ margin: '0 16px' }}
+                    value={minLength}
+                    onChange={onMinLengthChange}
+                />
+                <b>Līdz:</b>
+                <InputNumber
+                    min={minLength}
+                    max={11}
+                    style={{ margin: '0 16px' }}
+                    value={maxLength}
+                    onChange={onMaxLengthChange}
+                />
+
+            </div>
+            <div style={{ display: 'flex', justifyContent: 'center' }}>
+                <Slider
+                    range
+                    min={3}
+                    max={11}
+                    value={[minLength, maxLength]}
+                    onChange={onSliderChange}
+                    style={{ width: 300, display: 'flex', justifyContent: 'center' }}
+                />
+            </div>
+        </>
     )
 }
 

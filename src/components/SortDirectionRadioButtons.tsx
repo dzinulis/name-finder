@@ -23,7 +23,7 @@ function SortDirectionRadioButtons({ sortDirection, setSortDirection }: SortDire
                 value={sortDirection}
                 optionType="button"
                 buttonStyle="solid"
-                style={{ margin: '0 16px' }}
+                style={{display: 'flex', justifyContent: 'center' }}
             />
         </div>
     )

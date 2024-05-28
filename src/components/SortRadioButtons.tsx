@@ -18,12 +18,14 @@ function SortRadioButtons({ sortValue, setSortValue }: sortProps) {
 
     return (
         <div>
+            <h3 style={{ display: 'flex', justifyContent: 'center' }}>Kārtot:</h3>
             <Radio.Group
                 options={sortOptions}
                 onChange={onSortChange}
                 value={sortValue}
                 optionType="button"
                 buttonStyle="solid"
+                style={{ margin: '0 16px', display: 'flex', justifyContent: 'center' }}
             />
         </div>
     )

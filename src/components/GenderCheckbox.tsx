@@ -17,14 +17,17 @@ function GenderCheckbox({ genderValue, setGenderValue }: GenderProps) {
     };
 
     return (
-        <div>
-            <h3>Dzimums:</h3>
-            <Checkbox.Group
-                options={genderOptions}
-                value={genderValue}
-                onChange={onGenderChange}
-            />
-        </div>
+        <>
+            <h3 style={{ maxWidth: 450, display: 'flex', justifyContent: 'center' }}>Vārda dzimte:</h3>
+            <div style={{ maxWidth: 450, display: 'flex', justifyContent: 'center' }}>
+
+                <Checkbox.Group
+                    options={genderOptions}
+                    value={genderValue}
+                    onChange={onGenderChange}
+                />
+            </div>
+        </>
     )
 }
 
