@@ -27,6 +27,7 @@ Missing features to be added in the near future:
 - multiple language support
 - extended name day calendar
 - different layout for desktop and mobile devices
+- switch between light and dark mode
 
 Missing features to be added in the far future:
 - other countries' name day calendars
